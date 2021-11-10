@@ -16,7 +16,7 @@
     "prettier": "prettier --write \"src/**/*.ts\"",
     "build:comment": "构建",
     "build": "npm run eslint && npm run prettier && rm -rf lib && tsc --build",
-    "publish":"npm publish --access public"
+    "publish":"npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "",
